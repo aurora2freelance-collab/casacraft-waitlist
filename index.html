@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1A5A9B">
+  <title>CasaCraft — Ramenez le Maroc à la maison</title>
+  <meta name="description" content="Thé à la menthe, huile d'argan, épices et textiles berbères — directement des artisans marocains, livrés chez vous en Europe. Rejoignez la liste d'attente CasaCraft.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="CasaCraft — Ramenez le Maroc à la maison">
+  <meta property="og:description" content="Bientôt en Europe. Rejoignez la liste d'attente.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#waitlist">Aller au formulaire</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="CasaCraft">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-name">CasaCraft</span>
+      </a>
+      <div class="lang" role="group" aria-label="Langue / Language">
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="darija" aria-pressed="false">الدارجة</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="kicker" data-i18n="kicker">Bientôt disponible · Diﬀusion en Europe</p>
+        <h1 data-i18n="h1">Ramenez le Maroc à la maison</h1>
+        <p class="sub" data-i18n="sub">Thé à la menthe, huile d'argan, épices et textiles berbères — directement d'artisans marocains, livrés chez vous en Europe. Inscrivez-vous pour être prévenu·e au lancement.</p>
+        <p class="trust" data-i18n="trust">Coopératives partenaires à Safi, Tamanar, Tazenakht et Marrakech · Entreprise marocaine · Prix justes</p>
+        <a class="cta" href="#waitlist" data-i18n="cta">Rejoindre la liste d'attente →</a>
+        <p class="micro" data-i18n="micro">Gratuit, sans engagement. Pas de spam.</p>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="wrap cards">
+        <article class="card">
+          <span class="card-ico" aria-hidden="true">🍵</span>
+          <h2 data-i18n="c1t">Le rituel du thé</h2>
+          <p data-i18n="c1b">Verres dorés et théières argentées, comme à la maison.</p>
+        </article>
+        <article class="card">
+          <span class="card-ico" aria-hidden="true">🫒</span>
+          <h2 data-i18n="c2t">Huile d'argan</h2>
+          <p data-i18n="c2b">Coopératives de Tamanar — cuisine et cosmétique.</p>
+        </article>
+        <article class="card">
+          <span class="card-ico" aria-hidden="true">🌿</span>
+          <h2 data-i18n="c3t">Épices & safran</h2>
+          <p data-i18n="c3b">Ras el hanout, safran de Taliouine, sélection d'épices.</p>
+        </article>
+        <article class="card">
+          <span class="card-ico" aria-hidden="true">🧶</span>
+          <h2 data-i18n="c4t">Textiles berbères</h2>
+          <p data-i18n="c4b">Coussins et plaids tissés à la main dans l'Atlas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="waitlist" class="form-section">
+      <div class="wrap form-wrap">
+        <div class="form-intro">
+          <h2 data-i18n="ft">Dites-nous ce qui vous manque</h2>
+          <p data-i18n="fb">2 minutes pour nous aider à préparer notre premier lancement — et être parmi les premiers informés.</p>
+        </div>
+
+        <form id="waitlist-form" novalidate>
+          <div class="row">
+            <label for="email" data-i18n="l_email">E-mail <span class="req">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="vous@exemple.com" data-i18n-ph="ph_email">
+          </div>
+
+          <div class="row two">
+            <div>
+              <label for="first_name" data-i18n="l_name">Prénom</label>
+              <input type="text" id="first_name" name="first_name" autocomplete="given-name" data-i18n-ph="ph_name" placeholder="Facultatif">
+            </div>
+            <div>
+              <label for="country" data-i18n="l_country">Pays <span class="req">*</span></label>
+              <select id="country" name="country" required>
+                <option value="" data-i18n="sel">Choisir…</option>
+                <option value="FR">France 🇫🇷</option>
+                <option value="BE">Belgique 🇧🇪</option>
+                <option value="NL">Pays-Bas 🇳🇱</option>
+                <option value="DE">Allemagne 🇩🇪</option>
+                <option value="IT">Italie 🇮🇹</option>
+                <option value="ES">Espagne 🇪🇸</option>
+                <option value="EU_OTHER" data-i18n="opt_other">Autre pays de l'UE</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="row">
+            <legend data-i18n="l_collections">Qu'aimeriez-vous recevoir en premier ? <span class="hint">(plusieurs choix)</span></legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="interest" value="tea"><span data-i18n="i_tea">Rituel du thé (verres & théière)</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="argan"><span data-i18n="i_argan">Huile d'argan (cuisine & cosmétique)</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="spices"><span data-i18n="i_spices">Épices & safran</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="textiles"><span data-i18n="i_textiles">Textiles berbères (coussins & plaids)</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="poufs"><span data-i18n="i_poufs">Poufs & lanternes</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="tagines"><span data-i18n="i_tagines">Tajines & arts de la table</span></label>
+            </div>
+          </fieldset>
+
+          <div class="row two">
+            <div>
+              <label for="price_band" data-i18n="l_price">Budget pour un service à thé (6 verres)</label>
+              <select id="price_band" name="price_band">
+                <option value="" data-i18n="sel">Choisir…</option>
+                <option value="lt20">Moins de 20 €</option>
+                <option value="20_35">20 – 35 €</option>
+                <option value="35_50">35 – 50 €</option>
+                <option value="50_70">50 – 70 €</option>
+                <option value="gt70">Plus de 70 €</option>
+              </select>
+            </div>
+            <div>
+              <label for="ship_max" data-i18n="l_ship">Délai de livraison acceptable</label>
+              <select id="ship_max" name="ship_max">
+                <option value="" data-i18n="sel">Choisir…</option>
+                <option value="1_3d" data-i18n="s1">1 – 3 jours</option>
+                <option value="4_7d" data-i18n="s2">4 – 7 jours</option>
+                <option value="1_2w" data-i18n="s3">1 – 2 semaines</option>
+                <option value="2_3w" data-i18n="s4">2 – 3 semaines</option>
+                <option value="authentic" data-i18n="s5">Peu importe, si c'est authentique</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="row">
+            <legend data-i18n="l_pay">Moyens de paiement préférés <span class="hint">(plusieurs choix)</span></legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="payment" value="card"><span data-i18n="p_card">Carte (CB)</span></label>
+              <label class="chip"><input type="checkbox" name="payment" value="ideal"><span>iDEAL</span></label>
+              <label class="chip"><input type="checkbox" name="payment" value="bancontact"><span>Bancontact</span></label>
+              <label class="chip"><input type="checkbox" name="payment" value="klarna"><span data-i18n="p_klarna">Klarna (paiement en plusieurs fois)</span></label>
+              <label class="chip"><input type="checkbox" name="payment" value="paypal"><span>PayPal</span></label>
+              <label class="chip"><input type="checkbox" name="payment" value="transfer"><span data-i18n="p_transfer">Virement bancaire</span></label>
+            </div>
+          </fieldset>
+
+          <div class="row">
+            <label for="pref_lang" data-i18n="l_pref">Langue préférée pour nos messages</label>
+            <select id="pref_lang" name="preferred_language">
+              <option value="fr" data-i18n="opt_fr">Français</option>
+              <option value="en">English</option>
+              <option value="darija">Darija — الدارجة</option>
+              <option value="nl" data-i18n="opt_nl">Néerlandais</option>
+              <option value="de" data-i18n="opt_de">Allemand</option>
+            </select>
+          </div>
+
+          <div class="consent">
+            <label class="check">
+              <input type="checkbox" id="consent" name="consent" required>
+              <span data-i18n="c_consent">J'accepte d'être contacté·e par e-mail au sujet du lancement de CasaCraft. <span class="req">*</span></span>
+            </label>
+            <label class="check">
+              <input type="checkbox" id="news" name="news" checked>
+              <span data-i18n="c_news">Je souhaite aussi recevoir les nouveautés et offres (facultatif).</span>
+            </label>
+          </div>
+
+          <button type="submit" class="submit" data-i18n="submit">Rejoindre la liste d'attente</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          <p class="legal" data-i18n="legal">Vos données servent uniquement à vous prévenir du lancement. Désinscription en un clic. Nous ne promettons aucune date de livraison.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p><span class="brand-name">CasaCraft</span> — <span data-i18n="foot_tag">Le Maroc, directement des artisans.</span></p>
+      <p class="tiny" data-i18n="foot_note">Site vitrine — aucune vente en ligne pour le moment.</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
