@@ -36,37 +36,25 @@ role (no select). While `supabaseUrl`/`supabaseAnonKey` are empty the page shows
 
 ## Supabase setup (migrations)
 
-```sql
-create table if not exists public.waitlist (
-  id                bigint generated always as identity primary key,
-  email             text not null,
-  first_name        text,
-  country           text not null,
-  interests         text[] default '{}',
-  price_band        text,
-  ship_max          text,
-  payment_methods   text[] default '{}',
-  preferred_language text,
-  consent_marketing boolean default false,
-  page_lang         text,
-  utm_source        text,
-  utm_medium        text,
-  utm_campaign      text,
-  utm_content       text,
-  utm_term          text,
-  referrer          text,
-  user_agent        text,
-  page_url          text,
-  submitted_at      timestamptz default now()
-);
+Apply [`supabase/migrations/0001_waitlist.sql`](supabase/migrations/0001_waitlist.sql)
+(via the Supabase MCP `apply_migration`, or paste into the SQL editor). It creates
+`public.waitlist`, enables RLS, and adds an **insert-only** policy for `anon` —
+anonymous visitors can insert and nothing else, so there is no public read-back.
 
-alter table public.waitlist enable row level security;
+The required GDPR consent is persisted per-field as `consent_gdpr` (the table also
+enforces `check (consent_gdpr)`), alongside the optional `consent_marketing` flag.
 
--- anonymous visitors may insert only
-create policy "anon insert waitlist"
-  on public.waitlist for insert to anon
-  with check (true);
+## Verify the capture endpoint (CAS-232)
+
+```bash
+SUPABASE_URL="https://<project>.supabase.co" \
+SUPABASE_ANON_KEY="<anon public key>" \
+SUPABASE_SERVICE_KEY="<service key, optional>" \
+bash supabase/verify-capture.sh
 ```
+
+It asserts: anon INSERT returns `201`, anon SELECT is denied (no PII exposure),
+and — when the service key is present — the test row is actually stored.
 
 ## Tracked links (create after the capture endpoint is live)
 

@@ -203,6 +203,7 @@
       ship_max: document.getElementById("ship_max").value || null,
       payment_methods: checkedValues("payment"),
       preferred_language: document.getElementById("pref_lang").value || null,
+      consent_gdpr: consent,
       consent_marketing: document.getElementById("news").checked,
       page_lang: (window.__casacraftLang || "fr"),
       utm_source: tracking.utm_source,
