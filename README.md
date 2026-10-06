@@ -56,6 +56,21 @@ bash supabase/verify-capture.sh
 It asserts: anon INSERT returns `201`, anon SELECT is denied (no PII exposure),
 and — when the service key is present — the test row is actually stored.
 
+## Validate the migration locally (no Supabase account)
+
+```bash
+bash supabase/local-rls-test.sh
+```
+
+Runs a throwaway Postgres 16 container, applies the migration verbatim, and proves the
+security properties the public form depends on: anon INSERT succeeds, anon SELECT/UPDATE
+are denied (no PII read-back), `consent_gdpr` is enforced, and the service role can read
+the row. Requires only `docker`.
+
+> `POST /rest/v1/waitlist` must be sent with `Prefer: return=minimal` (the form does).
+> The `anon` role has INSERT but no SELECT, so a `return=representation` request would be
+> rejected — minimal is both cheaper and consistent with the insert-only grant.
+
 ## Tracked links (create after the capture endpoint is live)
 
 | Channel / creative | URL |
