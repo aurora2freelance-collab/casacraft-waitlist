@@ -8,6 +8,84 @@
 
   /* ---------- i18n ---------- */
   var I18N = {
+    nl: {
+      kicker: "Binnenkort beschikbaar · Verzending door heel Europa",
+      h1: "Breng Marokko naar huis",
+      sub: "Muntthee, arganolie, specerijen en Berber-textiel — rechtstreeks van Marokkaanse ambachtslieden, thuisbezorgd in Europa. Meld je aan en hoor als eerste wanneer we lanceren.",
+      trust: "Partnercoöperaties in Safi, Tamanar, Tazenakht en Marrakech · Marokkaans bedrijf · Eerlijke prijzen",
+      cta: "Op de wachtlijst →",
+      micro: "Gratis, zonder verplichting. Geen spam.",
+      c1t: "Het theeritueel", c1b: "Goudgerande glazen en zilveren theepotten, zoals thuis.",
+      c2t: "Arganolie", c2b: "Vrouwencoöperaties uit Tamanar — culinair en cosmetisch.",
+      c3t: "Specerijen & saffraan", c3b: "Ras el hanout, saffraan uit Taliouine, specerijenpakket.",
+      c4t: "Berber-textiel", c4b: "Handgeweven kussens en plaids uit de Atlas.",
+      ft: "Vertel ons wat je het meest mist", fb: "2 minuten om onze eerste lancering vorm te geven — en als eerste op de hoogte te zijn.",
+      l_email: 'E-mail <span class="req">*</span>', ph_email: "jij@voorbeeld.nl",
+      l_name: "Voornaam", ph_name: "Optioneel",
+      l_country: 'Land <span class="req">*</span>', sel: "Kies…", opt_other: "Ander EU-land",
+      l_collections: 'Wat wil je het liefst als eerste? <span class="hint">(meerdere mogelijk)</span>',
+      i_tea: "Theeritueel (glazen & theepot)", i_argan: "Arganolie (culinair & cosmetisch)",
+      i_spices: "Specerijen & saffraan", i_textiles: "Berber-textiel (kussens & plaids)",
+      i_poufs: "Poefs & lantaarns", i_tagines: "Tajines & tafelservies",
+      l_price: "Budget voor een theeset (6 glazen)",
+      l_ship: "Acceptabele levertijd",
+      s1: "1–3 dagen", s2: "4–7 dagen", s3: "1–2 weken", s4: "2–3 weken", s5: "Maakt niet uit, als het maar authentiek is",
+      l_pay: 'Voorkeursbetaalmethoden <span class="hint">(meerdere mogelijk)</span>',
+      p_card: "Kaart", p_klarna: "Klarna (achteraf betalen)", p_transfer: "Bankoverschrijving",
+      l_pref: "Voorkeurstaal voor onze e-mails",
+      opt_fr: "Frans", opt_nl: "Nederlands", opt_de: "Duits",
+      c_consent: 'Ik ga ermee akkoord per e-mail te worden gecontacteerd over de lancering van CasaCraft. <span class="req">*</span>',
+      c_news: "Stuur me ook nieuws en aanbiedingen (optioneel).",
+      submit: "Op de wachtlijst",
+      legal: "Je gegevens worden alleen gebruikt om je over de lancering te informeren. Uitschrijven met één klik. We beloven geen leverdatum.",
+      foot_tag: "Marokko, rechtstreeks van de ambachtslieden.", foot_note: "Showcase-site — nog geen online verkoop.",
+      ok: "Je staat op de lijst. We mailen je bij de lancering — bsaha!",
+      err_email: "Vul een geldig e-mailadres in.",
+      err_country: "Kies je land.",
+      err_consent: "Vink het vakje aan zodat we je kunnen mailen.",
+      err_generic: "Er ging iets mis. Probeer het zo nog eens.",
+      preview: "Aanmeldingen zijn nog niet open — kom snel terug.",
+      sending: "Versturen…"
+    },
+    de: {
+      kicker: "Bald verfügbar · Versand in ganz Europa",
+      h1: "Hol Marokko nach Hause",
+      sub: "Minztee, Arganöl, Gewürze und Berber-Textilien — direkt von marokkanischen Handwerkern, zu dir nach Hause in Europa. Melde dich an und erfahre als Erste:r vom Launch.",
+      trust: "Partnerkooperativen in Safi, Tamanar, Tazenakht und Marrakesch · Marokkanisches Unternehmen · Faire Preise",
+      cta: "Auf die Warteliste →",
+      micro: "Kostenlos, unverbindlich. Kein Spam.",
+      c1t: "Das Tee-Ritual", c1b: "Goldrandgläser und silberne Teekannen, wie zu Hause.",
+      c2t: "Arganöl", c2b: "Frauenkooperativen aus Tamanar — kulinarisch und kosmetisch.",
+      c3t: "Gewürze & Safran", c3b: "Ras el hanout, Safran aus Taliouine, Gewürzauswahl.",
+      c4t: "Berber-Textilien", c4b: "Handgewebte Kissen und Decken aus dem Atlas.",
+      ft: "Sag uns, was dir am meisten fehlt", fb: "2 Minuten, um unseren ersten Launch mitzugestalten — und als Erste:r informiert zu sein.",
+      l_email: 'E-Mail <span class="req">*</span>', ph_email: "du@beispiel.de",
+      l_name: "Vorname", ph_name: "Optional",
+      l_country: 'Land <span class="req">*</span>', sel: "Auswählen…", opt_other: "Anderes EU-Land",
+      l_collections: 'Was möchtest du zuerst? <span class="hint">(Mehrfachauswahl)</span>',
+      i_tea: "Tee-Ritual (Gläser & Teekanne)", i_argan: "Arganöl (kulinarisch & kosmetisch)",
+      i_spices: "Gewürze & Safran", i_textiles: "Berber-Textilien (Kissen & Decken)",
+      i_poufs: "Poufs & Laternen", i_tagines: "Tajine & Tischkultur",
+      l_price: "Budget für ein Teeset (6 Gläser)",
+      l_ship: "Akzeptable Lieferzeit",
+      s1: "1–3 Tage", s2: "4–7 Tage", s3: "1–2 Wochen", s4: "2–3 Wochen", s5: "Egal, solange es authentisch ist",
+      l_pay: 'Bevorzugte Zahlungsmethoden <span class="hint">(Mehrfachauswahl)</span>',
+      p_card: "Karte", p_klarna: "Klarna (später zahlen)", p_transfer: "Überweisung",
+      l_pref: "Bevorzugte Sprache für unsere E-Mails",
+      opt_fr: "Französisch", opt_nl: "Niederländisch", opt_de: "Deutsch",
+      c_consent: 'Ich stimme zu, per E-Mail über den CasaCraft-Launch informiert zu werden. <span class="req">*</span>',
+      c_news: "Schick mir auch Neuigkeiten und Angebote (optional).",
+      submit: "Auf die Warteliste",
+      legal: "Deine Daten werden nur genutzt, um dich über den Launch zu informieren. Abmeldung mit einem Klick. Wir versprechen kein Lieferdatum.",
+      foot_tag: "Marokko, direkt von den Handwerkern.", foot_note: "Schaufenster-Website — noch kein Online-Verkauf.",
+      ok: "Du bist auf der Liste. Wir schreiben dir zum Launch — bsaha!",
+      err_email: "Bitte gib eine gültige E-Mail-Adresse ein.",
+      err_country: "Bitte wähle dein Land.",
+      err_consent: "Bitte setze das Häkchen, damit wir dir schreiben können.",
+      err_generic: "Etwas ist schiefgelaufen. Bitte versuch es gleich noch einmal.",
+      preview: "Anmeldungen sind noch nicht offen — schau bald wieder vorbei.",
+      sending: "Wird gesendet…"
+    },
     en: {
       kicker: "Coming soon · Shipping across Europe",
       h1: "Bring Morocco home",
@@ -165,9 +243,17 @@
     });
   });
 
+  var SUPPORTED_LANGS = ["fr", "en", "darija", "nl", "de"];
   try {
     var saved = localStorage.getItem("casacraft_lang");
-    if (saved && (saved === "fr" || saved === "en" || saved === "darija")) setLang(saved);
+    if (saved && SUPPORTED_LANGS.indexOf(saved) !== -1) {
+      setLang(saved);
+    } else {
+      /* first visit: default to the visitor's browser language for the target markets */
+      var base = ((navigator.language || navigator.userLanguage || "fr") + "").slice(0, 2).toLowerCase();
+      var auto = { fr: "fr", en: "en", nl: "nl", de: "de", ar: "darija" }[base] || "fr";
+      if (auto !== "fr") setLang(auto);
+    }
   } catch (e) {}
 
   function checkedValues(name) {
